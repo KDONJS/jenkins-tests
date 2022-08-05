@@ -9,6 +9,11 @@ pipeline {
   }
 
   stages {
+    stage('Install node') {
+      steps {
+        sh 'cd C:\Users\yorli\Downloads\platzi-scripts-master\platzi-scripts-master\jenkins-tests && npm install'
+      }
+    }
     stage('Install dependencies') {
       steps {
         sh 'cd C:\Users\yorli\Downloads\platzi-scripts-master\platzi-scripts-master\jenkins-tests && npm i'
