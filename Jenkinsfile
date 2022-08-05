@@ -9,19 +9,14 @@ pipeline {
   }
 
   stages {
-    stage('Install node') {
-      steps {
-        sh 'cd C:\Users\yorli\Downloads\platzi-scripts-master\platzi-scripts-master\jenkins-tests && npm install'
-      }
-    }
     stage('Install dependencies') {
       steps {
-        sh 'cd C:\Users\yorli\Downloads\platzi-scripts-master\platzi-scripts-master\jenkins-tests && npm i'
+        sh 'cd C:/Users/yorli/Downloads/platzi-scripts-master/platzi-scripts-master/jenkins-tests && npm i'
       }
     }
     stage('Run tests') {
       steps {
-        sh 'cd C:\Users\yorli\Downloads\platzi-scripts-master\platzi-scripts-master\jenkins-tests && npm t'
+        sh 'cd C:/Users/yorli/Downloads/platzi-scripts-master/platzi-scripts-master/jenkins-tests && npm t'
       }
     }
   }
